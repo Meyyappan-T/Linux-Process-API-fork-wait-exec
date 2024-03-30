@@ -24,7 +24,8 @@ Test the C Program for the desired output.
 # PROGRAM:
 
 ## C Program to print process ID and parent Process ID using Linux API system calls
-C Program to print process ID and parent Process ID using Linux API system calls
+```
+//C Program to print process ID and parent Process ID using Linux API system calls
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -43,9 +44,11 @@ int main(void)
 	printf("The process id: %d\n",process_id);
 	printf("The process id of parent function: %d\n",p_process_id);
 	return 0; }
-##OUTPUT
-[!Alt_Text](./os_ex02.png)
+```
+## OUTPUT
+![Alt_Text](./os_ex02.png)
 ## C Program to create new process using Linux API system calls fork() and exit()
+```
 //C Program to create new process using Linux API system calls fork() and exit()
 #include <stdio.h>
 #include <unistd.h>
@@ -62,10 +65,11 @@ printf("I am parent, my pid is %d\n",getpid());
 sleep(100); 
 exit(0);} 
 }
-
-##OUTPUT
-[!Alt_text](./ex02_2.png)
+```
+## OUTPUT
+![Alt_text](./ex02_2.png)
 ## C Program to execute Linux system commands using Linux API system calls exec() family
+```
 //C Program to execute Linux system commands using Linux API system calls exec() family
 
 #include <stdio.h>
@@ -92,7 +96,8 @@ printf("Running ps with execlp. Now with path specified\n");
                 puts("child did not exit successfully\n");
         printf("Done.\n");
         exit(0);}
-##OUTPUT
-[!Alt_text](./ex02_3.png)
+```
+## OUTPUT
+![Alt_text](./ex02_3.png)
 # RESULT:
 The programs are executed successfully.
